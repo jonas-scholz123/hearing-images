@@ -61,7 +61,7 @@ class Converter():
             #acts as a reference point for conversion
             self.max_dist = self.hilbert_curve.distance_from_coordinates([2**p - 1, 0])
 
-        if self.method == "snake":
+        if self.method == "l2r":
             self.max_dist = self.image_size_x * self.image_size_y
 
         # logspace is needed because tones are logarithmically spaced for human hearing
@@ -110,12 +110,12 @@ class Converter():
         '''
         if self.method == "hilbert":
             return self.get_hilbert_freq(x, y)
-        elif self.method == "snake":
-            return self.get_snake_freq(x, y)
+        elif self.method == "l2r":
+            return self.get_l2r_freq(x, y)
 
-    def get_snake_freq(self, x, y):
+    def get_l2r_freq(self, x, y):
         '''
-        Converts x,y position of pixel to corresponding frequency using snake
+        Converts x,y position of pixel to corresponding frequency using l2r
         method
         --------------------------------------------------------------------
         Inputs:

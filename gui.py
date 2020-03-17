@@ -36,14 +36,14 @@ class App(Tk):
         self.selected = IntVar()
         self.rad1 = Radiobutton(self, text='Hilbert', value=1, variable=self.selected, indicatoron = True,
                                     command = self.pressed_radios)
-        self.rad2 = Radiobutton(self, text='Snake', value=2, variable=self.selected, indicatoron = True,
+        self.rad2 = Radiobutton(self, text='Left to Right', value=2, variable=self.selected, indicatoron = True,
                                     command = self.pressed_radios)
 
         # Not functional yet
         #self.rad3 = Radiobutton(self ,text='Spectrogram', value=3, variable=selected, indicatoron = True)
 
         self.value_to_method =  {1: "hilbert",
-                                 2: "snake",
+                                 2: "l2r",
                                  3: "spectrogram"}
 
 
