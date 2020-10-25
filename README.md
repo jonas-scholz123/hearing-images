@@ -6,6 +6,8 @@ By inversely Fourier transforming, this spectrum of frequencies/amplitudes is tu
 
 This could potentially allow visually impaired people to substitute vision through audio signals.
 
+This is based on the video: https://www.youtube.com/watch?v=3s7h2MHQtxc&t=461s&ab_channel=3Blue1Brown
+
 To run:
 
 run gui.py
