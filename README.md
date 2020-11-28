@@ -8,6 +8,14 @@ This could potentially allow visually impaired people to substitute vision throu
 
 This is based on the video: https://www.youtube.com/watch?v=3s7h2MHQtxc&t=461s&ab_channel=3Blue1Brown
 
+Special requirements:
+
+'''
+pip install hilbertcurve
+'''
+
 To run:
 
-run gui.py
+'''
+python3 gui.py
+'''
